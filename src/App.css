@@ -37,8 +37,80 @@
   }
 }
 
+.App {
+  display: flex;
+  text-align: center;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+body,
+html,
+#root {
+  height: 100%;
+}
+
+.todo-form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .todo {
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: -100px;
+}
+
+.todo ul {
+  list-style: none;
+  margin-left: -40px;
+}
+
+.todo li {
+  line-height: 2;
+  padding: 0 5px;
+}
+
+.submitButton {
+  background: #b8b8ff;
+  border: none;
+  padding: 15px 39px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 12px;
+  border-radius: 30px;
+  text-transform: uppercase;
+}
+
+.submitButton:hover, .submitButton:hover {
+  background: #4848ff;
+  color: white;
+  cursor: pointer;
+}
+
+.submitButton:focus  {
+  background: #4848ff;
+  border: 0px;
+}
+
+
+.closeButton {
+  background: none;
+  border: none;
+  padding: 0px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 12px;
+  margin-top: 7px;
+  text-transform: uppercase;
+  color: #3e3e3e;
+  font-size: 18px;
 }
 
 
